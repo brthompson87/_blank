@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            margin: .1rem;
+        }
+        body {
+            font-size: 1.5rem;
+            color: white;
+            height: 100vh;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .flex-header {
+            background-color: #5070B5;
+            padding: 3rem 0;
+        }
+        .flex-main {
+            display: flex;
+            flex: 1;
+        }
+        .flex-nav {
+            background-color: #B95F31;
+            padding: 3rem 0 0 0;
+            flex: 1 1 5rem;
+        }
+        .flex-article {
+            background-color: #81A43C;
+            padding: 3rem 0 0 0;
+            flex: 3 3;
+        }
+        .flex-aside {
+            background-color: #B95F21;
+            padding: 3em 0 0 0;
+            flex: 1 1 5rem;
+        }
+        .flex-footer {
+            background-color: #5070B5;
+            padding: 3rem 0 3rem 0;
+        }
+        @media all and (max-width: 540px) {
+            .flex-main {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="flex-header">
+        HEADER
+    </header>
+    <main class="flex-main">
+        <nav class="flex-nav">
+            SIDE NAV
+        </nav> 
+        <article class="flex-article">
+            MAIN CONTENT
+        </article>
+        <aside class="flex-aside">
+            SIDEBAR
+        </aside>
+    </main>
+    <footer class="flex-footer">
+        FOOTER
+    </footer>
+</body>
+</html>
